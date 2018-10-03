@@ -69,7 +69,8 @@ public class RegisterTask implements Runnable {
 				}
 				String ipAddr = task.getHost();
 
-				String hostName = app + ".marathon.mesos";
+				//String hostName = app + ".marathon.mesos";
+				String hostName = task.getHost();
 
 				String status = "UP";
 				Map<String, String> dataCenterInfo = new HashMap<>();
