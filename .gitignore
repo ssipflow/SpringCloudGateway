@@ -31,3 +31,5 @@ build.xml
 
 ### log ###
 *.txt
+
+.DS_Store
