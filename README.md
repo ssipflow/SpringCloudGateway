@@ -2,7 +2,7 @@
 일반적으로 Eureka Server는 서비스 등록을 위해 Eureka Client가 필요합니다. Eureka Client로 등록할 서비스 역시 Eureka Dependeny를 추가하고 Eureka Client 어노테이션을 추가합니다. Customed Eureka는 20초마다 Marathon을 크롤링하여 배포된 서비스를 유레카 서버에 등록하고, 30초마다 서비스를 재등록하여 배포된 서비스가 다운됐을 경우 유레카에 등록정보를 삭제합니다.
 
 * 구조  
-    ![apigateway_nexgate](https://steemitimages.com/800x0//https://raw.githubusercontent.com/TheNexCloud/NexGate/dev-mg.kim/images/customed_eureka_zuul.PNG?raw=true)
+    ![customed_eureka_zuul_apigateway](https://steemitimages.com/800x0//https://github.com/ssipflow/SpringCloudGateway/blob/ssipflow/images/customed_eureka_zuul.PNG?raw=true)
 
 * 환경변수 설정
     * Eureka Server의 application.properties  
@@ -16,14 +16,7 @@
             eureka.endpoint=${EUREKA_ENDPOINT:eureka-server-endpoint:8770/eureka/apps}
             ```
 
-* Advantages of Customed Eureka
-    * Supports service discovery by itself.
-    * Supports polyglot without side-car.
-    * Supports high availability.
-
-
-## ZUUL
-ZUUL은 Eureka Server에 등록된 서비스 라우팅을 위한 Spring Cloud 프로젝트입니다. 유레카 서버에 등록된 서비스들의 ID, Endpoint를 맵핑하기 위해 ZUUL은 Eureka Client로 등록합니다. 즉, ZUUL은 Customed Eureka의 유일한 Eureka Client입니다.
-
-* Eureka 와 ZULL을 이용한 API GATEWAY의 구조
-    ![apigateway_eureka_zuul](https://steemitimages.com/600x0//https://github.com/TheNexCloud/NexGate/blob/dev-mg.kim/images/standard_eureka_zuul.PNG?raw=true)  
+* Customed Eureka 특징
+    * Service Discovery 자동화
+    * Side-car 없는 Polyglot 지원
+    * 고가용성 지원
