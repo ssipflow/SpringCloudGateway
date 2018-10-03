@@ -2,7 +2,7 @@
 일반적으로 Eureka Server는 서비스 등록을 위해 Eureka Client가 필요합니다. Eureka Client로 등록할 서비스 역시 Eureka Dependeny를 추가하고 Eureka Client 어노테이션을 추가합니다. Customed Eureka는 20초마다 Marathon을 크롤링하여 배포된 서비스를 유레카 서버에 등록하고, 30초마다 서비스를 재등록하여 배포된 서비스가 다운됐을 경우 유레카에 등록정보를 삭제합니다.
 
 * 구조  
-    ![apigateway_nexgate](https://github.com/ssipflow/SpringCloudGateway/blob/ssipflow/images/customed_eureka_zuul.PNG?raw=true){:width="90"% height="90%"}
+    ![apigateway_nexgate](https://steemitimages.com/800x0//https://github.com/ssipflow/SpringCloudGateway/blob/ssipflow/images/customed_eureka_zuul.PNG?raw=true){:width="90"% height="90%"}
     <!-- ![apigateway_nexgate](https://steemitimages.com/800x0//https://raw.githubusercontent.com/TheNexCloud/NexGate/dev-mg.kim/images/customed_eureka_zuul.PNG?raw=true) -->
 
 * 환경변수 설정
