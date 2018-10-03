@@ -18,9 +18,8 @@ import com.nexcloud.router.service.RegisterExecutor;
  *
  */
 @EnableEurekaServer
-@RestController
 @SpringBootApplication
-public class NEXRouter {
+public class EurekaServer {
 	
 	/**
 	 * Service Register Using Thread
@@ -37,20 +36,8 @@ public class NEXRouter {
 			e.printStackTrace();
 		}
 	}
-
-	/**
-	 * DC/OS Process Check Bit
-	 * 
-	 * @return
-	 * @throws Exception
-	 */
-	@RequestMapping("/check")
-	public String checkBit(HttpServletRequest request) throws Exception {
-
-		return "";
-	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(NEXRouter.class, args);
+		SpringApplication.run(EurekaServer.class, args);
 	}
 }
