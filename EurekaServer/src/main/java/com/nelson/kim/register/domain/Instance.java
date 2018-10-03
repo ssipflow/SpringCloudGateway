@@ -1,4 +1,4 @@
-package com.nexcloud.router.register.domain;
+package com.nelson.kim.register.domain;
 
 public class Instance {
 	private Register instance;

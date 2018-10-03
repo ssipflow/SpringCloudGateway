@@ -1,4 +1,4 @@
-package com.nexcloud.zuul;
+package com.nelson.kim;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

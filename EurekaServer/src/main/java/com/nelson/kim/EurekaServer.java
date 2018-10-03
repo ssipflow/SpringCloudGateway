@@ -1,4 +1,4 @@
-package com.nexcloud.router;
+package com.nelson.kim;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.scheduling.annotation.Scheduled;
 
-import com.nexcloud.router.service.RegisterExecutor;
+import com.nelson.kim.service.RegisterExecutor;
 
 /**
  * Eureka Server

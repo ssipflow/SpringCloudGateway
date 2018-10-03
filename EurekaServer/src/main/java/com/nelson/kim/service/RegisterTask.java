@@ -1,8 +1,9 @@
-package com.nexcloud.router.service;
+package com.nelson.kim.service;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import com.nelson.kim.util.Util;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -10,11 +11,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.nexcloud.router.marathon.domain.Marathon;
-import com.nexcloud.router.marathon.domain.Task;
-import com.nexcloud.router.register.domain.Instance;
-import com.nexcloud.router.register.domain.Register;
-import com.nexcloud.router.util.Util;
+import com.nelson.kim.marathon.domain.Marathon;
+import com.nelson.kim.marathon.domain.Task;
+import com.nelson.kim.register.domain.Instance;
+import com.nelson.kim.register.domain.Register;
 
 /**
  * Service Registry for Thread
@@ -99,7 +99,7 @@ public class RegisterTask implements Runnable {
 					HttpHeaders headers = new HttpHeaders();
 					headers.setContentType(MediaType.APPLICATION_JSON);
 					String reqBody = Util.beanToJson(instance);
-					
+
 					restTemplate.exchange(eurekaEndpoint+name, HttpMethod.POST, new HttpEntity<String>(reqBody, headers), String.class);
 				}
 			}

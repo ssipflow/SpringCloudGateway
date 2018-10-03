@@ -1,4 +1,4 @@
-package com.nexcloud.router.marathon.domain;
+package com.nelson.kim.marathon.domain;
 
 import java.util.ArrayList;
 import java.util.List;

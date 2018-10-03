@@ -1,4 +1,4 @@
-package com.nexcloud.router.register.domain;
+package com.nelson.kim.register.domain;
 
 import java.util.HashMap;
 import java.util.Map;
