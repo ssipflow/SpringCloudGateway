@@ -20,9 +20,3 @@
     * Service Discovery 자동화
     * Side-car 없는 Polyglot 지원
     * 고가용성 지원
-
-## ZUUL
-ZUUL은 Eureka Server에 등록된 서비스 라우팅을 위한 Spring Cloud 프로젝트입니다. 유레카 서버에 등록된 서비스들의 ID, Endpoint를 맵핑하기 위해 ZUUL은 Eureka Client로 등록합니다. 즉, ZUUL은 Customed Eureka의 유일한 Eureka Client입니다.
-
-* Eureka 와 ZULL을 이용한 API GATEWAY의 구조
-    ![standard_eureka_zuulapigateway](https://steemitimages.com/600x0//https://github.com/ssipflow/SpringCloudGateway/blob/ssipflow/images/standard_eureka_zuul.PNG?raw=true)  
